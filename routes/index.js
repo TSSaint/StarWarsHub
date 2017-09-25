@@ -1,13 +1,17 @@
+var moviesJSON = require('../movies.json');
+
 // Home
 // 1st arg: get request of route; the HOME page
 // 2nd arg: request and a response
 // for get -- based on req, send some response
 exports.home = function(req, res) {
-    // res.send("There is an awakening...");
+    // gets the movies array and stores it in this variable 'movies'
+    var movies = moviesJSON.movies;
+
     res.render('home', {
     // passing an object literal in here that we can use in our ejs
     title: "Star Wars Hub",
-    movies: ["One", "Two", "Three"]
+    movies : movies
     });
     };
     
