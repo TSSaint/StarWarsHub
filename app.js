@@ -21,9 +21,18 @@ app.get('/darth', function(req, res) {
   res.send("The ability to destroy a planet is insignificant compared to the power of the Force.");
 });
 
+// Movie Single
+// 1st arg: we can store the number in a params variable
+// store episode number in var episode_number
+app.get('/star_wars_episode/:episode_number?', function(req, res) {
+  var episode_number = req.params.episode_number;
+  res.send("This is episode " + episode_number + ".");
+});
+
 app.listen(1234, function() {
   console.log("This droid is running on localhost:1234");
 })
+
 
 
 
