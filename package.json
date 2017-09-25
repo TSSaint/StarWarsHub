@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/TSSaint/StarWarsMovies/issues"
   },
-  "homepage": "https://github.com/TSSaint/StarWarsMovies#readme"
+  "homepage": "https://github.com/TSSaint/StarWarsMovies#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "nodemon": "^1.12.1"
+  }
 }
