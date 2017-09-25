@@ -8,6 +8,11 @@ var app = express();
 app.set("view engine", 'ejs');
 
 var routes = require('./routes');
+
+var path = require('path');
+// telling express that the static assets are in public
+app.use(express.static(path.join(__dirname, 'public')));
+
 console.log("MTFBWY");
 
 //////////////
