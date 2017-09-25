@@ -1,0 +1,26 @@
+{
+  "name": "02_express_02_starwarsmovies",
+  "version": "1.0.0",
+  "description": "A Star Wars app that lists current media",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSSaint/StarWarsMovies.git"
+  },
+  "keywords": [
+    "Star",
+    "Wars",
+    "Express",
+    "Node",
+    "JavaScript"
+  ],
+  "author": "T. Sebi Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TSSaint/StarWarsMovies/issues"
+  },
+  "homepage": "https://github.com/TSSaint/StarWarsMovies#readme"
+}
