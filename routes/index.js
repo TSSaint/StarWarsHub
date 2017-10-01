@@ -25,9 +25,27 @@ exports.darth = function(req, res) {
 // store episode number in var episode_number
 exports.movie_single = function(req, res) {
     var episode_number = req.params.episode_number;
-    res.send("This is episode " + episode_number + ".");
-    };
-    
+    // res.send("This is episode " + episode_number + ".");
+    var movies = moviesJSON.movies;
+
+    if (episode_number >= 1 && episode_number <= 6) {
+
+        var movie = movies[episode_number - 1];
+
+        var title = movie.title;
+
+        var main_characters = movie.main_characters;
+
+        res.render('movie_single', {
+            movies : movies,
+            title : title,
+            movie : movie,
+            main_characters : main_characters
+        });
+} else {
+  res.send("This is not the page you are looking for.");
+} 
+};
 // Missing Page
 // This runs if any other route other than what is defined is typed in
 exports.notFound = function(req, res) {
