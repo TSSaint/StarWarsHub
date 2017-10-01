@@ -43,7 +43,11 @@ exports.movie_single = function(req, res) {
             main_characters : main_characters
         });
 } else {
-  res.send("This is not the page you are looking for.");
+  // 404 page
+  res.send("notFound", {
+      movies : movies,
+      title : "This is not the page you are looking for."
+  });
 } 
 };
 // Missing Page
