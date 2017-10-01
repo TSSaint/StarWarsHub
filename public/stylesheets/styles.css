@@ -1,6 +1,7 @@
 /* --------------------------
 General Styles 
 ----------------------------- */
+
 body {
 	font-family: 'Gotham', sans-serif;
 	font-weight: 400;
@@ -57,9 +58,6 @@ Hero Image / Title Styles
 }
 
 
-
-
-
 /* ---------------------------------------
 Navbar and Navigation Styles / Overrides 
 ------------------------------------------ */
@@ -69,14 +67,14 @@ Navbar and Navigation Styles / Overrides
 }
 
 .navbar-nav li a {
-	color: #fff;
+	color: #FFFFFF;
 	text-transform: uppercase;
-	letter-spacing: 0.3px;
-	font-size: 12px;
+	letter-spacing: 0px;
+	font-size: 16px;
 }
 
 .dropdown.open .dropdown-menu li a {
-	transition: 5s;
+	transition: .5s;
 }
 
 .dropdown.open .dropdown-menu li a:hover {
@@ -97,7 +95,7 @@ Navbar and Navigation Styles / Overrides
 }
 
 .navbar-nav>li>.dropdown-menu {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 
