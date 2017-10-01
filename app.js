@@ -4,10 +4,10 @@ var express = require('express');
 //  new express application
 var app = express();
 
+var routes = require('./routes');
+
 // use express method 'set' to establish the view engine
 app.set("view engine", 'ejs');
-
-var routes = require('./routes');
 
 var path = require('path');
 // telling express that the static assets are in public
@@ -39,7 +39,3 @@ app.get('*', routes.notFound);
 app.listen(1234, function() {
   console.log("This droid is running on localhost:1234");
 });
-
-
-
-
