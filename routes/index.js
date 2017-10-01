@@ -44,7 +44,7 @@ exports.movie_single = function(req, res) {
         });
 } else {
   // 404 page
-  res.send("notFound", {
+  res.render("notFound", {
       movies : movies,
       title : "This is not the page you are looking for."
   });
@@ -53,5 +53,9 @@ exports.movie_single = function(req, res) {
 // Missing Page
 // This runs if any other route other than what is defined is typed in
 exports.notFound = function(req, res) {
-    res.send("This is not the page that you are looking for.");
+    var movies = moviesJSON.movies;
+    res.render("notFound", {
+        movies : movies,
+        title : "This is not the page you are looking for."
+    });
     };
