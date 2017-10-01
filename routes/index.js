@@ -33,4 +33,3 @@ exports.movie_single = function(req, res) {
 exports.notFound = function(req, res) {
     res.send("This is not the page that you are looking for.");
     };
-
