@@ -5,7 +5,7 @@ General Styles
 body {
 	font-family: 'Gotham', sans-serif;
 	font-weight: 400;
-	color: #333333;
+	color: #E6DCDC;
 	background-color: black;
 }
 
@@ -40,7 +40,7 @@ Hero Image / Title Styles
 
 #hero-image #hero-title {
 	position: absolute;
-	background-color: #fff;
+	background-color: #0803F8;
 	padding: 25px 60px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -53,7 +53,7 @@ Hero Image / Title Styles
   margin: 0px;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.20em;
+  font-size: 2.00em;
   letter-spacing: 0.4px;
 }
 
@@ -107,7 +107,7 @@ Home Page Posters Styles
 -------------------------------- */
 
 #posters-wrapper {
-	padding-top: 75px;
+	padding-top: 55px;
 }
 .poster {
 	width: 30%;
@@ -245,7 +245,7 @@ Movie-Single Hero Image and Title Styles
 
 #hero-image-single #hero-title {
 	position: absolute;
-	background-color: #fff;
+	background-color: #060606;
 	padding: 25px 60px;
 	left: 50%;
 	width: auto;
@@ -356,8 +356,8 @@ Media Queries / Responsive Styles
 }
 
 
-/* Two posters per row on smaller devices */
-@media (max-width: 991px) {
+/* One posters per row on smaller devices */
+@media (max-width: 770px) {
 	.poster-wrapper {
 		width: 100%;
 	}
@@ -380,6 +380,27 @@ Media Queries / Responsive Styles
 		margin-right: 0px;
 	}
 
+}
+
+/* Two posters per row on slightly smaller devices */
+@media (max-width: 768px) {
+	.poster-wrapper {
+		width: 100%;
+	}
+	.poster-wrapper img {
+		width: 350px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.description-wrapper {
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.poster {
+		width: 100%;
+		margin-bottom: 50px;
+	}
 }
 
 /* Increase width of the hero-title element on Movie-single pages to prevent text from stacking */
