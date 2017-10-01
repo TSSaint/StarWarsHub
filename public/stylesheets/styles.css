@@ -111,9 +111,10 @@ Home Page Posters Styles
 }
 .poster {
 	width: 30%;
-	margin-right: 4%;
+	margin-right: 1.5em;
 	display: inline-block;
 	position: relative;
+	padding: 1em 0em 1em 0em;
 }
 
 
@@ -193,7 +194,7 @@ footer .social-media-icons a:first-child {
 }
 
 footer .social-media-icons a:last-child:hover i {
-	color: #af0b0c;
+	color: #AD5862;
 }
 
 footer .social-media-icons a:first-child:hover i {
@@ -349,7 +350,7 @@ Media Queries / Responsive Styles
 		margin-right: 0px;
 	}
 
-	.poster:nth-child(-n + 3) {
+	.poster:nth-child(-n) {
 		margin-bottom: 30px;
 	}
 }
