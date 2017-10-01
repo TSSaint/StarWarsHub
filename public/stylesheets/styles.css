@@ -76,7 +76,7 @@ Navbar and Navigation Styles / Overrides
 }
 
 .dropdown.open .dropdown-menu li a {
-	transition: 0.5s ease-in-out;
+	transition: 5s;
 }
 
 .dropdown.open .dropdown-menu li a:hover {
