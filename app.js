@@ -36,6 +36,4 @@ app.get('*', routes.notFound);
 // Console Log
 // Check if app runsclear
 
-app.listen(1234, function() {
-  console.log("This droid is running on localhost:1234");
-});
+app.listen(process.env.PORT || 1977);
