@@ -28,6 +28,8 @@ exports.movie_single = function(req, res) {
     // res.send("This is episode " + episode_number + ".");
     var movies = moviesJSON.movies;
 
+    if (episode_number >= 1 && episode_number <= 6) {
+
     var movie = movies[episode_number - 1];
 
     var title = movie.title;
@@ -36,8 +38,10 @@ exports.movie_single = function(req, res) {
         movies : movies,
         title : title
     });
-    };
-    
+} else {
+  res.send("This is not the page you are looking for.");
+} 
+};
 // Missing Page
 // This runs if any other route other than what is defined is typed in
 exports.notFound = function(req, res) {
